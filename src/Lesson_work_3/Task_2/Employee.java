@@ -21,13 +21,18 @@ public abstract class Employee implements Comparable<Employee> {
      */
     protected double salary;
 
+    /**
+     * Стаж работы
+     */
+    protected int experienceWork;
+
     public abstract double calculateSalary();
 
-
-    public Employee(String surName, String name, double salary) {
+    public Employee(String surName, String name, double salary, int experienceWork) {
         this.surName = surName;
         this.name = name;
         this.salary = salary;
+        this.experienceWork = experienceWork;
     }
 
     @Override
@@ -37,10 +42,16 @@ public abstract class Employee implements Comparable<Employee> {
 
     @Override
     public int compareTo(Employee o) {
-        int res = surName.compareTo(o.surName);
-        if (res == 0){
-            return name.compareTo(o.name);
+        int res = Integer.compare(experienceWork,o.experienceWork);
+        if(res == 0) {
+            return Double.compare(calculateSalary(),o.calculateSalary());
         }
         return res;
+//        Сортировка по имени и фамилии
+//        int res = surName.compareTo(o.surName);
+//        if (res == 0){
+//            return name.compareTo(o.name);
+//        }
+//        return res;
     }
 }
