@@ -9,7 +9,7 @@ public class Program {
                 new Cat("Снежок",3),
                 new Cat("Пушок",5)
         };
-        Plate plate = new Plate(-1);
+        Plate plate = new Plate(100);
         plate.info();
         for (Cat cat:cats) {
             cat.eat(plate.getFood());
