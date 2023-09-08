@@ -19,8 +19,8 @@ public class Box<T extends Fruit>  {
     public void addFruct(T fruct){
         fructs.add(fruct);
     }
-    private T getFruit(){
-        return fructs.get(0);
+    public T getFruit(){
+        return fructs.get(fructs.size() - 1);
     }
     public int getQuantity(){
         return fructs.size();
@@ -34,7 +34,6 @@ public class Box<T extends Fruit>  {
         }
         box.isEmpty();
     }
-
     public boolean compare(Box box){
         int res = Float.compare(getQuantity(), box.getQuantity());
         if (res == 0){

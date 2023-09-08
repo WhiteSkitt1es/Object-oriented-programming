@@ -25,13 +25,13 @@ public class Program {
     public static void main(String[] args) {
 
         Box<Apple> boxApple1 = new Box<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 7; i++) {
             boxApple1.addFruct(new Apple());
         }
         System.out.printf("Колличество яблок в данной корзине %d, а вес ее составляет %.1f\n", boxApple1.getQuantity(), boxApple1.getWeightBox());
 
         Box<Apple> boxApple2 = new Box<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 8; i++) {
             boxApple2.addFruct(new Apple());
         }
         System.out.printf("Колличество яблок в данной корзине %d, а вес ее составляет %.1f\n", boxApple2.getQuantity(), boxApple2.getWeightBox());
@@ -50,11 +50,10 @@ public class Program {
 
         System.out.println(boxApple1.compare(boxOrange1)); // Сравнили коробки
 
-        boxApple1.sprinkle(boxApple2); // Пересыпали яблоки
+        boxApple2.sprinkle(boxApple1); // Пересыпали яблоки
 //        boxApple1.sprinkle(boxOrange1); // Пересыпать апельсины в яблоки нельзя
         System.out.println(boxApple1.getQuantity());
         System.out.println(boxApple2.getQuantity());
-
     }
 
 }
