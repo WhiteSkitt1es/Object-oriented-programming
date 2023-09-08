@@ -1,46 +1,80 @@
 package Lesson_work_4.homework;
 
-import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.LinkedList;
 
 public class Box<T extends Fruit>  {
 
-    private final ArrayList<T> fructs;
+    // Коллекция для хранения фруктов (3c)
+    LinkedList<T> fruits;
+
+    //#region Constructors
 
     public Box() {
-        this.fructs = new ArrayList<>();
+        this.fruits = new LinkedList<>();
     }
-    public float getWeightBox(){
-        float result = 0;
-        for (T fruct: fructs) {
-            result += fruct.getWeight();
-        }
-        return result;
+
+    public Box(Collection<T> fruits) {
+        this.fruits = new LinkedList<>(fruits);
     }
-    public void addFruct(T fruct){
-        fructs.add(fruct);
+
+    public Box(T... fruits) {
+        this.fruits = new LinkedList<>(Arrays.asList(fruits));
     }
-    public T getFruit(){
-        return fructs.get(fructs.size() - 1);
+
+    //#endregion
+
+    /**
+     * Получить вес всех фруктов, находящихся в коробке (3d)
+     * @return - вес фруктов
+     */
+    public double getWeight() {
+        if (fruits.isEmpty()) return 0;
+        // Кол-во фруктов (кол-во элементов коллекции) * вес фрукта (можем взять с первого элемента)
+        return fruits.size() * fruits.get(0).getWeight();
     }
-    public int getQuantity(){
-        return fructs.size();
+
+    /**
+     * Сравнить вес коробки, с коробкой, подаваемой на вход ввиде параметра (3e)
+     * @param other - другая коробка
+     * @return - результат сравнения веса коробок (погрешность 0.001)
+     */
+    public boolean compare(Box<?> other) {
+        return Math.abs(getWeight() - other.getWeight()) < 0.001;
     }
-    public void isEmpty(){
-        fructs.clear();
+
+    /**
+     * Переместить все фрукты из другой коробки в текущую (3f)
+     * @param other - другая коробка
+     */
+    public void replaceAll(Box<T> other) {
+        other.getFruits().addAll(fruits);
+        fruits.clear();
     }
-    public void sprinkle(Box<T> box){
-        for (int i = 0; i < box.getQuantity(); i++) {
-            addFruct(getFruit());
-        }
-        box.isEmpty();
+
+    /**
+     * Получить количество яблок в коробке
+     * @return
+     */
+    public int sizeBox(){
+        return fruits.size();
     }
-    public boolean compare(Box box){
-        int res = Float.compare(getQuantity(), box.getQuantity());
-        if (res == 0){
-            return true;
-        } else {
-            return false;
-        }
+
+    /**
+     * Получить все фрукты в коробке (вспомогательный метод, 3f)
+     * @return
+     */
+    public LinkedList<T> getFruits() {
+        return fruits;
+    }
+
+    /**
+     * Метод добавления фрукта в коробку (3g)
+     * @param fruit - фрукт
+     */
+    public void add(T fruit) {
+        fruits.add(fruit);
     }
 
 }

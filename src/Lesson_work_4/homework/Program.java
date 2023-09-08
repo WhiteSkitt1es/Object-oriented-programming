@@ -26,34 +26,34 @@ public class Program {
 
         Box<Apple> boxApple1 = new Box<>();
         for (int i = 0; i < 7; i++) {
-            boxApple1.addFruct(new Apple());
+            boxApple1.add(new Apple());
         }
-        System.out.printf("Колличество яблок в данной корзине %d, а вес ее составляет %.1f\n", boxApple1.getQuantity(), boxApple1.getWeightBox());
+        System.out.printf("Колличество яблок в данной корзине %d, а вес ее составляет %.1f\n", boxApple1.sizeBox(), boxApple1.getWeight());
 
         Box<Apple> boxApple2 = new Box<>();
         for (int i = 0; i < 8; i++) {
-            boxApple2.addFruct(new Apple());
+            boxApple2.add(new Apple());
         }
-        System.out.printf("Колличество яблок в данной корзине %d, а вес ее составляет %.1f\n", boxApple2.getQuantity(), boxApple2.getWeightBox());
+        System.out.printf("Колличество яблок в данной корзине %d, а вес ее составляет %.1f\n", boxApple2.sizeBox(), boxApple2.getWeight());
 
         Box<Orange> boxOrange1 = new Box<>();
         for (int i = 0; i < 4; i++) {
-            boxOrange1.addFruct(new Orange());
+            boxOrange1.add(new Orange());
         }
-        System.out.printf("Колличество апельсинов в данной корзине %d, а вес ее составляет %.1f\n", boxOrange1.getQuantity(), boxOrange1.getWeightBox());
+        System.out.printf("Колличество апельсинов в данной корзине %d, а вес ее составляет %.1f\n", boxOrange1.sizeBox(), boxOrange1.getWeight());
 
         Box<Orange> boxOrange2 = new Box<>();
         for (int i = 0; i < 4; i++) {
-            boxOrange2.addFruct(new Orange());
+            boxOrange2.add(new Orange());
         }
-        System.out.printf("Колличество апельсинов в данной корзине %d, а вес ее составляет %.1f\n", boxOrange2.getQuantity(), boxOrange2.getWeightBox());
+        System.out.printf("Колличество апельсинов в данной корзине %d, а вес ее составляет %.1f\n", boxOrange2.sizeBox(), boxOrange2.getWeight());
 
         System.out.println(boxApple1.compare(boxOrange1)); // Сравнили коробки
 
-        boxApple2.sprinkle(boxApple1); // Пересыпали яблоки
+        boxApple2.replaceAll(boxApple1); // Пересыпали яблоки
 //        boxApple1.sprinkle(boxOrange1); // Пересыпать апельсины в яблоки нельзя
-        System.out.println(boxApple1.getQuantity());
-        System.out.println(boxApple2.getQuantity());
+        System.out.println(boxApple1.sizeBox());
+        System.out.println(boxApple2.sizeBox());
     }
 
 }
