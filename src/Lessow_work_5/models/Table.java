@@ -2,7 +2,6 @@ package Lessow_work_5.models;
 
 import java.util.ArrayList;
 import java.util.Collection;
-import java.util.LinkedList;
 import java.util.Locale;
 
 public class Table {

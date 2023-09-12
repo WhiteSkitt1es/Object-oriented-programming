@@ -7,8 +7,8 @@ public class Reservation {
     private static int counter = 100;
     private final int id;
 
-    private Date date;
-    private String name;
+    private final Date date;
+    private final String name;
 
     {
         id = ++counter;

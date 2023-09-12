@@ -51,7 +51,7 @@ public class TableModel implements Model {
      * @param reservationDate дата бронирования
      * @param tableNo номер столика
      * @param name имя клиента
-     * @return
+     * @return номер удаленного резерва
      */
     public int changeReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
         for (Table table : tables){
