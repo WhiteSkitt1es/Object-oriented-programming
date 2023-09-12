@@ -24,7 +24,6 @@ public class TableModel implements Model {
             tables.add(new Table());
             tables.add(new Table());
         }
-
         return tables;
     }
 
@@ -48,11 +47,10 @@ public class TableModel implements Model {
     }
 
     /**
-     * TODO: Добавить реализацию в рамках выполнения домашней работы
-     * @param oldReservation
-     * @param reservationDate
-     * @param tableNo
-     * @param name
+     * @param oldReservation номер бронирования
+     * @param reservationDate дата бронирования
+     * @param tableNo номер столика
+     * @param name имя клиента
      * @return
      */
     public int changeReservationTable(int oldReservation, Date reservationDate, int tableNo, String name){
@@ -69,6 +67,4 @@ public class TableModel implements Model {
         }
         return -1;
     }
-
-
 }

@@ -41,7 +41,7 @@ public class BookingView implements View {
         if (reservationNo > 0) {
             System.out.printf("Бронь с вашего столика удалена. Номер вашей брони был : #%d\n", reservationNo);
         } else {
-            System.out.println("Не удалось удалить бронь. Попробуйте повторить операцию позже.");
+            System.out.println("Не удалось удалить бронь. Проверьте ваши данные.");
         }
     }
 
@@ -59,7 +59,6 @@ public class BookingView implements View {
     }
 
     /**
-     * TODO: Добавить реализацию в рамках выполнения домашней работы
      * Действие клиента (пользователь нажал на кнопку отмены бронирования), бронирование столика
      *
      * @param  oldReservation номер старого резерва

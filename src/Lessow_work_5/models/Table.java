@@ -9,7 +9,6 @@ public class Table {
 
     private static int counter;
     private final int no;
-
     private final Collection<Reservation> reservations = new ArrayList<>();
 
     public int getNo() {
