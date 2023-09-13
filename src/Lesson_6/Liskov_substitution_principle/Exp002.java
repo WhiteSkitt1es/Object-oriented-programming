@@ -9,7 +9,7 @@ import java.util.List;
 // Наследник не должен "ломать" поведение
 // Наследник не должен делать меньше чем родитель
 
-public class Ex003_2LSP {
+public class Exp002 {
     public static void main(String[] args) {
         List<AbstractAnimal> list1 = new ArrayList<>(Arrays.asList(new Dog(), new Python()));
 

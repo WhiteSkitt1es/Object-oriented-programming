@@ -1,6 +1,6 @@
 package Lesson_6.Open_closed_principle;
 
-public class Ex002_2OCP {
+public class Exp002 {
     public static void main(String[] args) {
 
         System.out.println(new BaseClient().getDiscount(100));

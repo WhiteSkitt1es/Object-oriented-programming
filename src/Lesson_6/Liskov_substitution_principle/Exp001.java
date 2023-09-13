@@ -8,7 +8,7 @@ import java.util.List;
 // Принцип подстановки Лисков
 // Наследник не должен "ломать" поведение
 // Наследник не должен делать меньше чем родитель
-public class Ex003_1LSP {
+public class Exp001 {
     public static void main(String[] args) throws Exception {
         List<Animal> list = 
         new ArrayList<>(Arrays.asList(new Cat(), new Fish() ));

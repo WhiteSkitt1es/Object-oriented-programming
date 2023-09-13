@@ -1,10 +1,11 @@
-package Lesson_6.Interface_segregation_principle;// Interface segregation principle
+package Lesson_6.Interface_segregation_principle;
+// Interface segregation principle
 // Принцип разделения интерфейса 
 // Модули высокого уровня не должны зависеть от модулей нижнего уровня.
-//   И те, и другие должны зависеть от абстракций.
+// И те, и другие должны зависеть от абстракций.
 // Абстракции не должны зависеть от деталей. Детали должны зависеть от абстракций.
 
-public class Ex004_2ISP {
+public class Exp002 {
     public static void main(String[] args) {
 
     }

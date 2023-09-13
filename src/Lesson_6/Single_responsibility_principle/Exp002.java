@@ -7,7 +7,7 @@ import java.util.List;
 // Принцип единственной ответственности
 // У класса есть предназначение
 
-public class Ex001_2SRP {
+public class Exp002 {
     public static void main(String[] args) {
 
         PlannerSRP planner = new PlannerSRP();

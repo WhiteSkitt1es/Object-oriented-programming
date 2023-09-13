@@ -1,6 +1,6 @@
 package Lesson_6.Dependency_inversion_principle;
 
-public class Ex005_1DIP {
+public class Exp001 {
     public static void main(String[] args) {
         Book book = new Book();
         book.viewAuthor();

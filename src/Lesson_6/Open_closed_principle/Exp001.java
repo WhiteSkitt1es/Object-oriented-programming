@@ -3,7 +3,7 @@ package Lesson_6.Open_closed_principle;
 // Open-closed principle
 // Принцип открытости/закрытости
 // Можно улучшать, но нельзя изменять
-public class Ex002_1OCP {
+public class Exp001 {
     public static void main(String[] args) {
         System.out.println(new Client(1).getDiscount(100));
     }
