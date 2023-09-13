@@ -47,6 +47,7 @@ public class TableModel implements Model {
     }
 
     /**
+     * Отмена бронирования столика
      * @param oldReservation номер бронирования
      * @param reservationDate дата бронирования
      * @param tableNo номер столика
