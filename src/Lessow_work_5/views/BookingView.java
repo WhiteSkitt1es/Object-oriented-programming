@@ -39,7 +39,7 @@ public class BookingView implements View {
     @Override
     public void showChangeReservationResult(int reservationNo) {
         if (reservationNo > 0) {
-            System.out.printf("Бронь с вашего столика удалена. Номер вашей брони был : #%d\n", reservationNo);
+            System.out.printf("Бронь с вашего столика удалена. Номер вашей брони был: #%d\n", reservationNo);
         } else {
             System.out.println("Не удалось удалить бронь. Проверьте ваши данные.");
         }
