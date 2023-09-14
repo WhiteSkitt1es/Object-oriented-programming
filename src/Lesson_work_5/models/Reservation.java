@@ -1,4 +1,4 @@
-package Lessow_work_5.models;
+package Lesson_work_5.models;
 
 import java.util.Date;
 

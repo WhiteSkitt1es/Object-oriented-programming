@@ -1,8 +1,8 @@
-package Lessow_work_5;
+package Lesson_work_5;
 
-import Lessow_work_5.models.TableModel;
-import Lessow_work_5.presenters.BookingPresenter;
-import Lessow_work_5.views.BookingView;
+import Lesson_work_5.models.TableModel;
+import Lesson_work_5.presenters.BookingPresenter;
+import Lesson_work_5.views.BookingView;
 
 import java.util.Date;
 

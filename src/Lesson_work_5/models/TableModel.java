@@ -1,6 +1,6 @@
-package Lessow_work_5.models;
+package Lesson_work_5.models;
 
-import Lessow_work_5.presenters.Model;
+import Lesson_work_5.presenters.Model;
 
 import java.util.ArrayList;
 import java.util.Collection;

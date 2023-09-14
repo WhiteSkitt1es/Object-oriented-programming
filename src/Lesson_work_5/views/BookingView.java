@@ -1,8 +1,8 @@
-package Lessow_work_5.views;
+package Lesson_work_5.views;
 
-import Lessow_work_5.models.Table;
-import Lessow_work_5.presenters.View;
-import Lessow_work_5.presenters.ViewObserver;
+import Lesson_work_5.models.Table;
+import Lesson_work_5.presenters.View;
+import Lesson_work_5.presenters.ViewObserver;
 
 import java.util.Collection;
 import java.util.Date;

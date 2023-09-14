@@ -1,6 +1,6 @@
-package Lessow_work_5.presenters;
+package Lesson_work_5.presenters;
 
-import Lessow_work_5.models.Table;
+import Lesson_work_5.models.Table;
 
 import java.util.Collection;
 import java.util.Date;
